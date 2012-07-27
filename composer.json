@@ -1,0 +1,21 @@
+{
+    "name": "arglbr/geeklist-php",
+    "version": "0.1"
+    "description": "Get stuff of a given user at Geeklist, without an API key.",
+    "authors": [
+        {
+            "name": "Adriano Laranjeira",
+            "email": "adriano@argl.eng.br"
+        }
+    ],
+
+    "require": {
+        "php":   ">=5.3.*",
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
