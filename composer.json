@@ -1,6 +1,5 @@
 {
     "name": "arglbr/geeklist-php",
-    "version": "0.1"
     "description": "Get stuff of a given user at Geeklist, without an API key.",
     "authors": [
         {
