@@ -5,7 +5,7 @@ const OUTPUT_ARRAY = 1;
 const OUTPUT_JSON  = 2;
 const GKLST_URL    = 'http://geekli.st/';
 
-abstract class GklstBase
+abstract class GeeklistPage
 {
 	protected $username;
 	protected $output_format;
@@ -15,7 +15,7 @@ abstract class GklstBase
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $p_url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_USERAGENT, "fetcher " . time()); //prevent rate limit
+		curl_setopt($ch, CURLOPT_USERAGENT, "fetcher " . time());
 		$ret = curl_exec($ch);
 		curl_close($ch);
 		unset($ch);
@@ -63,7 +63,7 @@ abstract class GklstBase
 	abstract protected function treatPage($p_page);
 }
 
-class Card extends GklstBase
+class Card extends GeeklistPage
 {
 	private $cards;
 
