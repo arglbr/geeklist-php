@@ -1,8 +1,8 @@
 <?php
-require ('/put/the/absolute/path/to/geeklist.php');
+require ('arglbr/geeklist/card.php');
 
-use \Br\Eng\Arglbr\Geeklist as Geeklist;
+use ArglBR\Geeklist as Geeklist;
 
-$a = new Geeklist\Card('arglbr', Geeklist\OUTPUT_JSON);
+$a = new Geeklist\Card('arglbr', Geeklist\OUTPUT_ARRAY);
 print print_r($a->getAllCards(), true) . PHP_EOL;
 print print_r($a->getRandomCard(), true) . PHP_EOL;
