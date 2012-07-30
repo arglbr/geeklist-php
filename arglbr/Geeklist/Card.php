@@ -1,5 +1,5 @@
 <?php
-namespace ArglBR\Geeklist;
+namespace arglbr\Geeklist;
 
 class Card extends GeeklistPage
 {
