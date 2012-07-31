@@ -1,5 +1,9 @@
 {
-    "name": "arglbr/geeklist-php",
+    "name":        "arglbr/geeklist-php",
+    "type":        "library",
+    "keywords":    ["php", "geeklist", "card"],
+    "homepage":    "https://github.com/arglbr/geeklist-php",
+    "license":     "undefined",
     "description": "Get stuff of a given user at Geeklist, without an API key.",
     "authors": [
         {
@@ -11,6 +15,13 @@
     "extra": {
         "branch-alias": {
             "dev-master": "0.1-dev"
+        }
+    }
+
+    "autoload": {
+        "psr-0": {
+            "": "Geeklist/",
+            "Tests": "tests/"
         }
     }
 }
