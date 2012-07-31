@@ -1,5 +1,5 @@
 <?php
-namespace arglbr\Geeklist;
+namespace Geeklist;
 
 const OUTPUT_ARRAY = 1;
 const OUTPUT_JSON  = 2;

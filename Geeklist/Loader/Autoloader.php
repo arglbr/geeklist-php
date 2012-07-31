@@ -5,7 +5,7 @@
  * https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
  * From: http://gist.github.com/221634
  */
-namespace arglbr\Geeklist\Loader;
+namespace Geeklist\Loader;
 
 class Autoloader
 {
