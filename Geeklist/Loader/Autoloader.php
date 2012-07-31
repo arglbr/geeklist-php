@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  * SplClassLoader Implementation
  * https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
  * From: http://gist.github.com/221634
@@ -17,7 +17,7 @@ class Autoloader
     /**
      * Creates a new <tt>SplClassLoader</tt> that loads classes of the
      * specified namespace.
-     * 
+     *
      * @param string $ns The namespace to use.
      */
     public function __construct($ns = null, $includePath = null)
@@ -28,7 +28,7 @@ class Autoloader
 
     /**
      * Sets the namespace separator used by classes in the namespace of this class loader.
-     * 
+     *
      * @param string $sep The separator to use.
      */
     public function setNamespaceSeparator($sep)
@@ -48,7 +48,7 @@ class Autoloader
 
     /**
      * Sets the base include path for all class files in the namespace of this class loader.
-     * 
+     *
      * @param string $includePath
      */
     public function setIncludePath($includePath)
@@ -68,7 +68,7 @@ class Autoloader
 
     /**
      * Sets the file extension of class files in the namespace of this class loader.
-     * 
+     *
      * @param string $fileExtension
      */
     public function setFileExtension($fileExtension)
@@ -105,7 +105,7 @@ class Autoloader
     /**
      * Loads the given class or interface.
      *
-     * @param string $className The name of the class to load.
+     * @param  string $className The name of the class to load.
      * @return void
      */
     public function loadClass($className)

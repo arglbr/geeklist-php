@@ -24,18 +24,17 @@ class Card extends GeeklistPage
         } while ($p1 > 0 || $p2 > 0);
 
         unset($url, $page, $to, $tagi, $tage, $p1, $p2, $p3);
+
         return $ret;
     }
 
     private function getCards()
     {
-        if (isset($this->cards) === false)
-        {
+        if (isset($this->cards) === false) {
             $ret     = array();
             $profile = namespace\GKLST_URL . $this->getUser() . '/';
 
-            if ( $page = $this->doGetRequest($profile) );
-            {
+            if ( $page = $this->doGetRequest($profile) ) {;
                 $ret = $this->treatPage($page);
             }
 
@@ -51,21 +50,17 @@ class Card extends GeeklistPage
 
     private function outputCards($p_card = null)
     {
-        if ($p_card === false)
-        {
+        if ($p_card === false) {
             $tmp = array();
-        }
-        elseif (is_integer($p_card))
-        {
+        } elseif (is_integer($p_card)) {
             $tmp = $this->cards[$p_card];
-        }
-        else
-        {
+        } else {
             $tmp = $this->cards;
         }
 
         $ret = $this->outputItems($tmp);
         unset($tmp);
+
         return $ret;
     }
 
@@ -73,13 +68,14 @@ class Card extends GeeklistPage
     {
         $this->getCards();
         $card = (count($this->cards) > 0) ? rand(0, (count($this->cards) - 1)) : false;
+
         return $this->outputCards($card);
     }
 
     public function getAllCards()
     {
         $this->getCards();
+
         return $this->outputCards();
     }
 }
-

@@ -19,6 +19,7 @@ abstract class GeeklistPage
         $ret = curl_exec($ch);
         curl_close($ch);
         unset($ch);
+
         return $ret;
     }
 
@@ -29,8 +30,7 @@ abstract class GeeklistPage
 
     protected function getUser()
     {
-        if (is_null($this->username))
-        {
+        if (is_null($this->username)) {
             throw new \Exception('Unknown username. Did you call ' . __CLASS__ . '::SetUser() before?');
         }
 
@@ -44,8 +44,7 @@ abstract class GeeklistPage
 
     protected function outputItems($p_items = null)
     {
-        switch ($this->output_format)
-        {
+        switch ($this->output_format) {
             case namespace\OUTPUT_ARRAY:
                 $ret = (is_array($p_items)) ? $p_items : array($p_items);
                 break;
@@ -57,9 +56,9 @@ abstract class GeeklistPage
         }
 
         unset($tmp);
+
         return $ret;
     }
 
     abstract protected function treatPage($p_page);
 }
-
