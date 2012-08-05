@@ -39,7 +39,7 @@ abstract class GeeklistPage
 
     public function setFormat($p_format = null)
     {
-        $this->output_format = (isset($p_format)) ? (int) $p_format : namespace\OUTPUT_ARRAY;
+        $this->output_format = (isset($p_format) && (int) $p_format <= 2) ? (int) $p_format : namespace\OUTPUT_ARRAY;
     }
 
     public function getFormat()
