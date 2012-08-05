@@ -23,23 +23,28 @@ abstract class GeeklistPage
         return $ret;
     }
 
-    protected function setUser($p_username)
+    public function setUser($p_username)
     {
         $this->username = (strlen(trim($p_username))) ? trim($p_username) : null;
     }
 
-    protected function getUser()
+    public function getUser()
     {
         if (is_null($this->username)) {
-            throw new \Exception('Unknown username. Did you call ' . __CLASS__ . '::SetUser() before?');
+            throw new \DomainException('Unknown username. Call ' . __CLASS__ . '::SetUser() with a valid username.', 1000);
+        } else {
+            return $this->username;
         }
-
-        return $this->username;
     }
 
-    protected function setFormat($p_format = null)
+    public function setFormat($p_format = null)
     {
-        $this->output_format = (isset($p_format)) ? (int) $p_format : namespace\OUTPUT_JSON;
+        $this->output_format = (isset($p_format)) ? (int) $p_format : namespace\OUTPUT_ARRAY;
+    }
+
+    public function getFormat()
+    {
+        return $this->output_format;
     }
 
     protected function outputItems($p_items = null)

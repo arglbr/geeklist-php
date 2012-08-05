@@ -1,3 +1,6 @@
-* Unit tests;
+* Unit tests:
+    - [DONE] Warn about invalid usernames;
+    - [TODO] Fallback to array format when setting an invalid output format;
+    - [TODO] Assure all getCard methods return an array, an empty onde in worst case.
 * Define and create a LICENSE file.
-*
+
