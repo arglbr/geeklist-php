@@ -3,7 +3,7 @@
     "type":        "library",
     "keywords":    ["php", "geeklist", "card"],
     "homepage":    "https://github.com/arglbr/geeklist-php",
-    "license":     "undefined",
+    "license":     "LGPL",
     "description": "Get stuff of a given user at Geeklist, without an API key.",
     "authors": [
         {
