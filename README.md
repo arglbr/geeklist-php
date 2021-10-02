@@ -1,6 +1,14 @@
+# DEPRECATED
+
+![no-maintenance-intended](https://img.shields.io/maintenance/no/2012?style=plastic)
+
 # Geeklist-PHP
 
 ## English
+
+> Deprecated, obsolete & archived.
+> 
+> Geeklist is out of service until the launch of 2.0 version, what makes this repo useless :-).
 
 ### Overview
 
@@ -52,6 +60,10 @@ Generate the documentation as desired:
 
 
 ## Brazilian portuguese
+
+> Depreciado, obsoleto e arquivado.
+> 
+> A rede Geeklist saiu do ar até o lançamento da versão 2.0, o que torna este repo inútil :-).
 
 ### Visão geral
 
